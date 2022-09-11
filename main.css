@@ -16,21 +16,39 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    transition: 0.4s all 0.1s ease-in-out;
+    transition: 0.2s all 0.1s ease-in-out;
 }
 .dynamic-island * {
     visibility: hidden;
     opacity: 0;
-    transition: 0.2s opacity ease-in-out;
+    transition: 0.1s all 0.1s ease-in-out;
 }
 
 .dynamic-island:hover {
-    min-width: 128px;
-    width: max-content;
-    height: max-content;
+    width: 256px;
+    height: 36px;
 }
 
 .dynamic-island:hover * {
     opacity: 1;
     visibility: visible;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    width: 48px;
+}
+
+nav ul li img {
+    width: 16px;
 }
