@@ -8,6 +8,6 @@ window.addEventListener('scroll', () => {
 }); 
 
 window.addEventListener('click', (e) => { 
-    !dynamicIsland.contains(e.target) ? dynamicIsland.classList.remove('open', 'menu') : '' ; 
+    !dynamicIsland.contains(e.target) ? dynamicIsland.classList.remove('menu') : '' ; 
     !dynamicIsland.contains(e.target) ? document.querySelector('.nav').style.display = 'none' : '';
 })
