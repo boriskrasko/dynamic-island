@@ -10,11 +10,19 @@
 <body>
     <div class="dynamic-island">
         <nav>
+            <ul class="nav">
+                <li>Discover</li>
+                <li>Design</li>
+                <li>Develop</li>
+                <li>Support</li>
+            </ul>
             <ul>
-                <li><img src="images/menu.png" alt="m"></li>
-                <li><img src="images/search.png" alt="s"></li>
-                <li><img src="images/shop.png" alt="s"></li>
-                <li><img src="images/user.png" alt="u"></li>
+                <li onclick="setTimeout(() => {
+                    document.querySelector('.nav').style.display = document.querySelector('.menu') ?'flex' : 'none';
+                }, 200); document.querySelector('.dynamic-island.open').classList.toggle('menu')"><img src="icons/menu.svg" alt="m"></li>
+                <li><img src="icons/search.svg" alt="s"></li>
+                <li><img src="icons/shop.svg" alt="s"></li>
+                <li><img src="icons/user.svg" alt="u"></li>
             </ul>
         </nav>
     </div>
